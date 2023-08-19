@@ -16,7 +16,7 @@ And also with the following dependencies:
 - remark-html
 - rss
 
-Click [here]() to see a demo of this template.
+Click [here](https://super-blog-starter.vercel.app/) to see a demo of this template.
 
 # Getting started...
 
