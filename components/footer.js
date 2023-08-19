@@ -6,41 +6,31 @@ export default function Footer() {
       <ul className={styles.footer}>
         <li className={styles.blog}>
           <a
-            href="https://github.com/JB-26"
+            href="https://github.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <i className="fa-brands fa-github"></i>
+            GitHub
           </a>
         </li>
         <li className={styles.blog}>
           <a
             className={styles.blog}
-            href="https://codepen.io/JayBl"
+            href="https://www.linkedin.com/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <i className="fa-brands fa-codepen"></i>
+            LinkedIn
           </a>
         </li>
         <li className={styles.blog}>
           <a
             className={styles.blog}
-            href="https://www.linkedin.com/in/jblewitt/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-        <li className={styles.blog}>
-          <a
-            className={styles.blog}
-            href="https://mastodon.social/@jblewitt"
+            href="https://joinmastodon.org/"
             rel="noopener noreferrer me"
             target="_blank"
           >
-            <i className="fa-brands fa-mastodon"></i>
+            Mastodon
           </a>
         </li>
         <li className={styles.blog}>
@@ -50,7 +40,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <i className="fa-solid fa-square-rss"></i>
+            RSS
           </a>
         </li>
       </ul>

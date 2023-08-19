@@ -5,7 +5,7 @@ import Header from "./header";
 import Footer from "./footer";
 import Signature from "./signature";
 
-export const siteTitle = "Joshua Blewitt";
+export const siteTitle = "Your title!";
 
 export default function Layout({ children, home }) {
   return (

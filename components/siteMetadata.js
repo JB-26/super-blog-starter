@@ -1,7 +1,7 @@
 export const metadata = {
-    title: 'Blog of Joshua Blewitt',
-    description: 'The blog of Joshua Blewitt, an IT Professional',
-    siteUrl: 'https://joshblewitt.dev',
-    author: 'Joshua Blewitt',
+    title: 'Your blog',
+    description: 'Your description',
+    siteUrl: 'Your URL',
+    author: 'You!',
     language: 'English (UK)'
 }

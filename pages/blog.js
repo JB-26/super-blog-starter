@@ -7,14 +7,14 @@ import paginationStyle from "../styles/blog.module.css";
 import { getSortedPostsData, getPostDataByName } from "../lib/posts";
 import Link from "next/link";
 
-const postsPerPage = 5;
+const postsPerPage = 5; // Change this value for the number of posts per page
 import Script from "next/script";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   const allPostsNum = allPostsData.length;
   const numPages = Math.ceil(allPostsData.length / postsPerPage);
-  const specificPostName = "2023-03-26-MK-tech"; // Replace with the desired post name, without the .md file extension
+  const specificPostName = "new-post"; // Replace with the desired post name, without the .md file extension
   const specificPostData = await getPostDataByName(specificPostName);
 
   return {
@@ -35,11 +35,6 @@ export default function Blog({
 }) {
   return (
     <Layout home>
-      <Script
-        src="https://kit.fontawesome.com/af67ca5a39.js"
-        crossOrigin="anonymous"
-        async
-      ></Script>
       <Head>
         <title>{siteTitle}</title>
         <meta

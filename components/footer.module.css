@@ -8,6 +8,7 @@ ul.footer {
 }
 
 li.blog {
+    font-size: 16px;
     display: inline;
     text-align: center;
     padding-left: 15px;
@@ -16,4 +17,10 @@ li.blog {
 
 .footer {
     font-size: 35px;
+}
+
+@media (min-width: 768px) {
+    li.blog {
+        font-size: 26px;
+    }
 }
