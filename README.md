@@ -3,6 +3,8 @@ _Like any other starter, only super!_
 
 Super Blog Starter is a template designed for you to get up and running with a blog that has plenty of features out of the box.
 
+The current version is __v0.0.2__
+
 This blog is built using [NextJS](https://nextjs.org/).
 
 And also with the following dependencies:
@@ -36,6 +38,7 @@ This repo will allow you to build your own website/blog with the following pages
     - Pinned Post feature
     - Links to blog posts
     - Ordered by newest post first
+    - Tag your posts with a category that readers can find related posts
 - Blog posts
     - Signature at the bottom (that you can customise!)
     - Code formatting
@@ -79,6 +82,16 @@ You'll need to open the `blog.js` file to begin making changes, including:
 All posts are stored in the `posts` directory, which contains __markdown__ files.
 
 Simply add a new markdown file to the `posts` directory and the new post will appear on the blog! Make sure that your file ends with the `.md` file extension (posts that end with the `.markdown` file extension won't work)
+
+Each blog post must have the following configuration:
+
+```
+---
+title: "A post"
+date: "2023-08-04" #YYYY-MM-DD
+tags: ["Test"]
+---
+```
 
 ## Signature
 The signature is displayed at the end of each blog post. You'll need to open the `components/signature.js` file to begin making changes, including:
