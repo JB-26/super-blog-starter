@@ -3,7 +3,7 @@ _Like any other starter, only super!_
 
 Super Blog Starter is a template designed for you to get up and running with a blog that has plenty of features out of the box.
 
-The current version is __v0.0.4__
+The current version is __v0.1.0__
 
 This blog is built using [NextJS](https://nextjs.org/).
 
@@ -39,6 +39,7 @@ This repo will allow you to build your own website/blog with the following pages
     - Links to blog posts
     - Ordered by newest post first
     - Tag your posts with a category that readers can find related posts
+    - Search bar (NEW!)
 - Blog posts
     - Signature at the bottom (that you can customise!)
     - Code formatting
@@ -46,6 +47,7 @@ This repo will allow you to build your own website/blog with the following pages
 - Responsive design
 - Header and Footer (that you can customise!)
 - Customisable 404 page
+    - Search bar (NEW!)
 - RSS feed (update the siteMetadata.js file with your changes)
 - ESLint
 
