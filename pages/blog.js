@@ -2,13 +2,15 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import Footer from "../components/footer";
 import Date from "../components/date";
+import Search from '../components/search';
 import utilStyles from "../styles/utils.module.css";
 import paginationStyle from "../styles/blog.module.css";
 import { getSortedPostsData, getPostDataByName } from "../lib/posts";
 import Link from "next/link";
 
-const postsPerPage = 5; // Change this value for the number of posts per page
+const postsPerPage = 5;
 import Script from "next/script";
+import { useRouter } from "next/router";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -33,6 +35,25 @@ export default function Blog({
   allPostsNum,
   specificPostData,
 }) {
+
+  const router = useRouter();
+
+  const handleSearch = async (query) => {
+    try {
+      const response = await fetch(`/api/search?query=${encodeURIComponent(query)}`);
+      const data = await response.json();
+      console.log('Search results:', data.results);
+
+      // Store results in localStorage
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('searchResults', JSON.stringify(data.results));
+        router.push('/search-results');
+      }
+    } catch (error) {
+      console.error('Error fetching search results:', error);
+    }
+  };
+
   return (
     <Layout home>
       <Head>
@@ -44,7 +65,11 @@ export default function Blog({
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h1 className={utilStyles.headingXl}>
-          Pinned Post <i className="fa-solid fa-thumbtack"></i>
+          Search for a post
+        </h1>
+        <Search onSearch={handleSearch} />
+        <h1 className={utilStyles.headingXl}>
+          Pinned Post
         </h1>
         <div className={utilStyles.listItem}>
           <Link href={`/posts/${specificPostData.name}`}>
