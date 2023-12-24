@@ -60,15 +60,15 @@ export default function Blog({
         <title>{siteTitle}</title>
         <meta
           charSet="utf-8"
-          name="The personal website of IT Professional, Joshua Blewitt"
+          name="Your website!"
         />
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h1 className={utilStyles.headingXl}>
+        <h1 data-testid="search" className={utilStyles.headingXl}>
           Search for a post
         </h1>
         <Search onSearch={handleSearch} />
-        <h1 className={utilStyles.headingXl}>
+        <h1 data-testid="pinned" className={utilStyles.headingXl}>
           Pinned Post
         </h1>
         <div className={utilStyles.listItem}>
@@ -81,7 +81,7 @@ export default function Blog({
           </small>
         </div>
 
-        <h1 className={utilStyles.headingXl}>Blog - {allPostsNum} posts</h1>
+        <h1 data-testid="blog-posts" className={utilStyles.headingXl}>Blog - {allPostsNum} posts</h1>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

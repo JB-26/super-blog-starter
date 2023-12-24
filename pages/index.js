@@ -16,23 +16,23 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <div className={styles.content}>
           <div className={styles.left}>
-            <h1 className={utilStyles.heading2Xl}>
+            <h1 data-testid="main-heading" className={utilStyles.heading2Xl}>
               YOUR NAME {"  "}
               <span role='img' aria-label='string'>
                 👋
               </span>
             </h1>
-            <p className={styles.known}>Your subtitle here. Open the Index.js page to edit this!</p>
-            <p>
+            <p data-testid="subtitle" className={styles.known}>Your subtitle here. Open the Index.js page to edit this!</p>
+            <p data-testid="paragraph">
               Your introduction
             </p>
-            <div className={styles.buttonContainer}>
+            <div data-testid="button" className={styles.buttonContainer}>
               <a className={styles.emailButton} href='mailto:YOUR-EMAIL'>
                 Get in touch!
               </a>
             </div>
           </div>
-          <div className={styles.right}>
+          <div data-testid="image" className={styles.right}>
             <Image priority className={styles.image} src={indexImage} alt='Me at Dishoom in London!'/>
           </div>
         </div>
