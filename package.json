@@ -4,21 +4,25 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "playwright": "npx playwright test"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.1.0",
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.1",
     "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
-    "next": "^13.5.2",
+    "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "@playwright/test": "^1.40.1"
   },
   "devDependencies": {
-    "eslint": "8.51.0",
-    "eslint-config-next": "^13.5.4"
+    "@types/node": "^20.10.5",
+    "eslint": "8.55.0",
+    "eslint-config-next": "^14.0.3"
   }
 }

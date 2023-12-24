@@ -14,8 +14,8 @@ export default function About() {
         <meta charSet="utf-8" />
       </Head>
       <section className={utilStyles.headingMd}>
-        <h1 className={utilStyles.headingXl}>A bit about me</h1>
-        <i>Change this text and photo!</i>
+        <h1 data-testid="heading" className={utilStyles.headingXl}>A bit about me</h1>
+        <i data-testid="intro">Change this text and photo!</i>
       </section>
       <section className={`${utilStyles.headingMd}`}>
         <p>
