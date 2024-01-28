@@ -3,7 +3,7 @@ _Like any other starter, only super!_
 
 Super Blog Starter is a template designed for you to get up and running with a blog that has plenty of features out of the box.
 
-The current version is __v0.2.0__
+The current version is __v0.3.0__
 
 This blog is built using [NextJS](https://nextjs.org/).
 
