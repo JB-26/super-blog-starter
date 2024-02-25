@@ -3,12 +3,13 @@ _Like any other starter, only super!_
 
 Super Blog Starter is a template designed for you to get up and running with a blog that has plenty of features out of the box.
 
-The current version is __v0.2.0__
+The current version is __v0.4.0__
 
 This blog is built using [NextJS](https://nextjs.org/).
 
 And also with the following dependencies:
 - @vercel/analytics
+- @vercel/speed-insights
 - date-fns
 - gray-matter
 - next
@@ -53,9 +54,14 @@ This repo will allow you to build your own website/blog with the following pages
 - ESLint
 
 ## If deploying to Vercel...
-- Analytics included (this will only work on if deploying to Vercel)
+- Analytics included
+- Speed insights included
 
-If you don't want to use Analytics, remove the `Analytics` tag located in `pages/_app.js`
+These packages will only work if deployed to Vercel.
+
+If you don't want to use Analytics and/or speed insights, remove the `Analytics` and `SpeedInsights` tag located in `pages/_app.js`
+
+This a
 
 # Configuration
 ## Index
