@@ -14,7 +14,6 @@ export default function Header() {
       <div className={styles.icon}>
         <Link href="/" className={styles.blog}>
           <Image
-            priority
             src={Icon}
             alt={"My initials - which is also the favicon"}
           />
