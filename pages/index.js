@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </div>
           <div data-testid="image" className={styles.right}>
-            <Image priority className={styles.image} src={indexImage} alt='Me at Dishoom in London!'/>
+            <Image className={styles.image} src={indexImage} alt='Me at Dishoom in London!'/>
           </div>
         </div>
       </section>
