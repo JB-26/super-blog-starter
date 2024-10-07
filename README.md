@@ -3,7 +3,7 @@ _Like any other starter, only super!_
 
 Super Blog Starter is a template designed for you to get up and running with a blog that has plenty of features out of the box.
 
-The current version is __v0.4.0__
+The current version is __v0.6.0__
 
 This blog is built using [NextJS](https://nextjs.org/).
 
@@ -41,7 +41,8 @@ This repo will allow you to build your own website/blog with the following pages
     - Links to blog posts
     - Ordered by newest post first
     - Tag your posts with a category that readers can find related posts
-    - Search bar (NEW!)
+    - Descriptions for posts (NEW!)
+    - Search bar
 - Blog posts
     - Signature at the bottom (that you can customise!)
     - Code formatting
@@ -49,7 +50,7 @@ This repo will allow you to build your own website/blog with the following pages
 - Responsive design
 - Header and Footer (that you can customise!)
 - Customisable 404 page
-    - Search bar (NEW!)
+    - Search bar
 - RSS feed (update the siteMetadata.js file with your changes)
 - ESLint
 
@@ -60,8 +61,6 @@ This repo will allow you to build your own website/blog with the following pages
 These packages will only work if deployed to Vercel.
 
 If you don't want to use Analytics and/or speed insights, remove the `Analytics` and `SpeedInsights` tag located in `pages/_app.js`
-
-This a
 
 # Configuration
 ## Index
@@ -99,6 +98,7 @@ Each blog post must have the following configuration:
 title: "A post"
 date: "2023-08-04" #YYYY-MM-DD
 tags: ["Test"]
+description: "My description"
 ---
 ```
 

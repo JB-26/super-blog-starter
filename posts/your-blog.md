@@ -2,6 +2,7 @@
 title: "Welcome to your blog! 🎉"
 date: "2023-08-05" #YYYY-MM-DD
 tags: ["Test"]
+description: "Look at this post!"
 ---
 
 Hello! 👋
